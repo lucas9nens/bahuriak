@@ -1,0 +1,14 @@
+# mod_rewrite starts
+
+# does not apply to existing directories, meaning that if the folder exists on the server then don't change anything and dont't run the Rule!
+
+# Check for file in the directory with .html extension
+
+# The page is shown that contains the .html extension
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+ErrorDocument 404 / 404.html

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bahuriak | About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+  <body>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+          <span style="color: white">Bahuriak</span>
+        </div>
+
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+        
+        <div class="container">
+            <div class="heading subpage">
+                <p class="line subpage" style="font-size: 0.8em;">Criminal Defense</p>
+            </div>
+            <div style="text-align: center; font-size: var(--body-text-size); margin-bottom: 13vh;">
+              <p>Are you currently facing criminal charges? Let us help you. Bahuriak Law Group specializes in criminal defense. The attorneys at BLG are committed to justice and getting the best results for their clients.</p> 
+              <p>Contact us today for a free consultation:</p>
+              <button class="icon-link" style="margin-bottom: 13vh;" href="tel:+12154131150">+1 (215) 413-1150</button>
+              
+              <hr>
+
+              <div>
+                <h3 style="font-family: var(--primary-font); font-weight: bold;  margin-top: 13vh; margin-bottom: 2vh;">Areas of Focus:</h3>
+                <p>Violent Crimes</p>
+                <p>Theft Crimes</p>
+                <p>Juvenile Crimes</p>
+                <p>Misdemeanors</p>
+                <p>White Collar Crimes</p>
+                <p>Drug Charges</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 1px solid rgb(209, 209, 209)";>
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">DISCLAIMER</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Use of this web-site is subject to the terms and conditions below. By accessing this web-site, you acknowledge that you have read and agree to these terms and conditions.
+                  <br/><br/>
+                  The contents of this web-site are for informational purposes only. The information provided may not reflect the most current legal developments.  The information on this web-site does not constitute legal advice. Visitors to this web-site should not act or refrain from acting based on information available via this site. A visit to this web-site does not create an attorney-client relationship. You should always seek the advice of counsel in your jurisdiction for individual advice regarding your particular situation.
+                  <br/><br/>
+                  The description anywhere on this web-site, especially if contained within attorney biographical information, of any specific case does not mean or suggest that similar results can or could be obtained in any other matter. Each legal matter should be considered unique and subject to varying results.
+                  You should not rely upon transmission of an email through this web-site to create an attorney-client relationship.
+                  <br/><br/>
+                  Although efforts are made to keep this web-site up to date, it is not guaranteed to be current. Anyone viewing information contained in this site should not act upon it without seeking professional counsel from an attorney authorized to practice in his or her jurisdiction.
+                  <br/><br/>
+                  From time to time, our firm may make changes to this Disclaimer. With this potential development in mind, your continued visits to our web-site shall be construed to constitute an awareness of any future changes and agreement to the expressed terms.
+                  <br/><br/>
+                  This website is operated from the firm's Philadelphia office in the Commonwealth of Pennsylvania. All disclaimers on this Internet site are governed by and construed in accordance with the laws of the Commonwealth of Pennsylvania.
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        <footer>
+          Copyright, 2012-<p id="demo"></p>, Bahuriak Law Group, LLC. All rights reserved. <span style="font-weight: bold; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">DISCLAIMER</span>
+        </footer>
+        
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300;400&family=Merriweather:wght@400;700&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+}
+
+
+:root{
+    --header-font-color: #FBF8F4;
+    --primary-color: rgb(31,67,91);
+    --secondary-font-color: rgb(54, 54, 54);
+    --secondary-color: #966f33ff;
+    --primary-font: 'Merriweather', sans-serif;
+    --secondary-font: 'Asap', sans-serif;
+    --body-text-size: 1.2em;
+    
+}
+
+
+body{
+    background-color: #FFF5EB;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+
+
+.container{
+    width: 90%;
+}
+
+.jumbotron{
+    background-image: url(images/bgpic-firm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    min-height: 100vh;
+
+}
+
+.navbar{
+    padding: 1rem;
+    background-color: rgba(0,0,0, 0.20);
+}
+
+
+.navbar.subpage{
+    background-color: #FFF5EB;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+
+.collapse-background{
+    background-color: rgba(0,0,0, 0.20);
+}
+
+
+.navbar-nav > li{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+.banner{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+h4 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: white;
+  }
+
+h4.subpage{
+    color: black;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+ li, a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    transition: 0.5s ease-out;
+
+  }
+
+  a:hover{
+    transition: 0.2s ease-in;
+    font-size: 1.8vh;
+    color: white;
+  }
+
+
+li{
+    line-height: 2.5rem;
+}
+
+.icon-link{
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+
+}
+
+.icon-link:hover{
+    transition: 0.2s;
+    transform: scale(1.1); 
+
+}
+
+
+section{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.heading {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+
+}
+
+.heading.subpage {
+    font-size: 6vh;
+    color: black;
+    margin-top: 13vh;
+}
+
+.line {
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--primary-color);
+    width: fit-content;
+}
+
+.line.subpage{
+    border-bottom: 8px solid var(--primary-color);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.col{
+    margin-bottom: 75px;
+}
+
+.num_circle{
+    display: inline-block;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    color: #FFF5EB;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 3vh;
+}
+
+table{
+    width: fit-content;
+}
+
+td{
+    padding: 1.2rem;
+}
+
+.mini_info{
+    background-color: #ccd4daff;
+    padding: 5vh;
+    font-size: 1.2em;
+    margin: auto;
+    border-radius: 50px;
+    color: var(--primary-color);
+    margin: 15vh 0 15vh 0;
+}
+
+.about_text{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+hr{
+    color: rgb(75, 75, 75);
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 2vh;
+    font-size: 1.5vh;
+    display: inline-block; /* or use "inline" depending on your layout preferences */
+    width: 100%;
+    color: #FFF5EB;
+}
+
+#demo {
+    display: inline; /* Set the display property of the <p> element to inline */
+  }
+
+.modal-content{
+    background-color: #FFF5EB;
+}
+
+
+.btn-close{
+    background-color: var(--secondary-color);
+}
+
+
+.error-code{
+    font-size: 13vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+      width: 100%; /* Adjust width for desktop */
+    }
+    
+}
+
