@@ -85,15 +85,16 @@ h4.subpage{
     list-style: none;
     text-decoration: none;
     color: rgb(180, 180, 180);
-    transition: 0.5s ease-out;
+    transition: 0.2s ease-out;
 
   }
 
-  a:hover{
+  li:hover{
     transition: 0.2s ease-in;
-    font-size: 1.8vh;
+    font-size: +1.8vh;
     color: white;
   }
+
 
 
 li{
