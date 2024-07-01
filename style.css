@@ -11,6 +11,7 @@
     --primary-color: rgb(31,67,91);
     --secondary-font-color: rgb(54, 54, 54);
     --secondary-color: #966f33ff;
+    --line-color: #6b9cbd;
     --primary-font: 'Merriweather', sans-serif;
     --secondary-font: 'Asap', sans-serif;
     --body-text-size: 1.2em;
@@ -86,15 +87,15 @@ h4.subpage{
     text-decoration: none;
     color: rgb(180, 180, 180);
     transition: 0.2s ease-out;
-
+    font-size: 1em;
   }
 
-  li:hover{
+  a:hover{
     transition: 0.2s ease-in;
-    font-size: +1.8vh;
+    font-size: 1.01em;
     color: white;
-  }
 
+  }
 
 
 li{
@@ -125,6 +126,14 @@ section{
     margin-bottom: 20vh;
 }
 
+.col-md-8, .col-md-2{
+    margin-top: 20vh;
+}
+
+.col-md-2:last-child{
+    margin-bottom: 20vh;
+}
+
 .heading {
     font-family: var(--primary-font);
     font-weight: bold;
@@ -136,19 +145,19 @@ section{
 }
 
 .heading.subpage {
-    font-size: 6vh;
+    font-size: 4vh;
     color: black;
     margin-top: 13vh;
 }
 
 .line {
     padding-bottom: 10px;
-    border-bottom: 5px solid var(--primary-color);
+    border-bottom: 2px solid var(--line-color);
     width: fit-content;
 }
 
 .line.subpage{
-    border-bottom: 8px solid var(--primary-color);
+    border-bottom: 5px solid var(--line-color);
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -230,6 +239,45 @@ footer{
     margin-top: 10vh;
 }
 
+.form{
+    background-color: #FFF5EB;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 5vh;
+    border-radius: 50px;
+    margin: 8vh 2vw;
+}
+
+.form-control{
+    border: 1px solid #ffe7cf;
+}
+
+.card{
+    font-family: var(--primary-font);
+}
+
+.button-stack{
+    padding: 1vh;
+    margin-top: 2vh;
+    border: none;
+    background-color: #ccd4daff;
+    color: var(--primary-color);
+    border-radius: 12px;
+}
+
+.button-stack:hover{
+    transition: 0.25s;
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px -12px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.practice-buttons{
+    display: inline-grid;
+    width: 100%;
+    padding: 0;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -238,6 +286,13 @@ footer{
         opacity: 1;
      }
 }
+
+@media screen and (max-width: 480px) {
+    /* Your CSS rules here */
+    .practice-buttons{
+        padding: 5vh;
+    }
+  }
 
 @media screen and (min-width: 768px) {
     .container {
